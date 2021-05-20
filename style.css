@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #444;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.title {
+    background-color: #217346;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    height: 5vh;
+    color: #fff;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    background-color: #217346;
+}
+
+.menu-bar-item {
+    background-color: #217346;
+    color: #fff;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-bar-item.selected {
+    background-color: #fff;
+    color: #217346;
+}
+
+.menu-bar-item:hover {
+    background-color: #195534;
+    cursor: pointer;
+}
+
+.menu-bar-item.selected:hover {
+    background-color: #fff;
+    cursor: default;
+}
+
+.menu-icon-bar{
+    display: flex;
+    /* to align menu-icon in row */
+    flex-direction: row;
+    height: 6vh;
+}
+
+.menu-icon{
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    display: flex;
+    /* to align content vertically and horizontally justify and align are req and they req display:flex */
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.menu-icon:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.menu-selector{
+    height: 4.5vh;
+    font-size: 1.2rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    /* to avoid overlapping in mobile view */
+}
+
+#font-family{
+    width: 10vw;
+    min-width: 130px;
+    font-family: Noto Sans;
+}
+
+#font-size{
+    width: 3.5vw;
+    min-width: 55px;
+
+}
+
+.formula-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background-color: lightgray;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#selected-cell {
+    width: 120px;
+    
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    height: 70%;
+    overflow: hidden;
+    background-color: white;
+}
+
+#formula-sign {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+#formula-input {
+    width: calc(100vw - 160px);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    height: 70%;
+    background-color: white;
+    overflow: hidden;
+}
